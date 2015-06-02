@@ -1,5 +1,5 @@
 # dropSlider
-
+![alt tag](https://lucasfront.files.wordpress.com/2015/06/slide-show.jpg)
 ### Sobre
 Este slide possui apenas 2.600KB (CSS e JS minificados) !
 Uma boa ideia para estudar o codigo usado e ate mesmo usar em algum projeto!
