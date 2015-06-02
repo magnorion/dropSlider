@@ -1,0 +1,59 @@
+.drop-slide-container{
+	overflow: hidden !important;
+	z-index: 10 !important;
+	position: relative !important;
+}
+
+.drop-slide-container img{
+	width: 100% !important;
+	height:100% !important;
+	position: absolute !important;
+}
+
+#pagination{
+	width:80%;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	z-index: 99 !important;
+	background-color: #3c3c3c;
+	bottom: -15%;
+	height: 40px;
+	padding: 5px;
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 0px 0px 4px 2px #ddf2ff;
+}
+
+#pagination ul{
+	margin: 10px auto !important;
+	padding: 0px !important;
+	text-align: center !important;
+}
+
+.pag-child{
+	border: none !important;
+ 	padding: 0px 6px 0px 8px !important;
+	margin-right: 10px !important;
+	display: inline !important;
+	border-radius: 11px !important;
+	cursor: pointer !important;
+}
+
+.drop-unselected{
+	background-color: #000;
+}
+
+.drop-selected{
+	background-color: #ddd;
+}
+
+.image-unselected{
+	z-index: 0;
+	opacity: 0;
+}
+
+.image-selected{
+	display: block;
+	z-index: 3;
+	opacity: 1;
+}

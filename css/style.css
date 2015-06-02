@@ -1,0 +1,64 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: helvetica;
+	overflow-x: hidden;
+
+}
+
+#img_conteudo{
+	background-color: #000;
+}
+
+.box{
+	width:100%;
+	height: auto;
+	position:relative;
+	overflow: auto;
+	overflow-x: hidden;
+	
+}
+
+.content{
+	background-color: #ddd;	
+}
+
+.row{
+	margin: 0px auto;
+	width:800px;
+	position: relative;
+	height: auto;
+	overflow: auto;
+}
+
+.code-placement{
+	padding: 20px;
+	height:auto;
+	background-color: #000;
+}
+
+code{
+	color: #fff;
+}
+
+.row ul{
+	margin:0px;
+	padding:0px;
+	width: 74px;
+	margin: 0px auto;
+}
+
+.row ul li{
+	list-style: none;
+	margin:0px auto;
+}
+
+.row a{
+	color: #fff;
+	text-decoration:none;
+}
+
+.footer{
+	background-color: #000;
+	padding: 20px;
+}

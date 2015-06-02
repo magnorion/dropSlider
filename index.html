@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<meta charset='utf8'>
+		<title> Drop slider </title>
+		<link rel='stylesheet' href='css/style.css' /> <!-- style da pagina -->
+		<link rel='stylesheet' href='css/drop_style.min.css' /> <!-- style dropSlide -->
+	</head>
+	<body>
+		<div class='box'>
+			<div class='row'>
+				<h1> DropSlide </h1>
+				<h2> Pequeno slide feito em jQuery! </h2>
+			</div>
+		</div>
+		<div class='box content'>
+			<div class='row'>
+				<div id='img_conteudo'>
+					<img src='img/img1.jpg' />
+					<img src='img/img2.jpg' />
+					<img src='img/img3.jpg' />
+					<img src='img/img4.jpg' />
+				</div>
+			</div>
+		</div>
+		<div class='container_box box'>
+			<div class='row'>
+				<h3> Sobre </h3>
+				<p> Este slide possui apenas 2.600KB (CSS e JS minificados) ! </p>
+				<p> A ideia deste slider é ajudar as pessoas que estão começando a desenvolver aplicativos para a web usando javaScript e ou com jQuery! </p>
+				<p> Fique a vontade para estudar o codigo e modifica-lo para deixar da forma que mais lhe agrada! </p>
+			</div>
+		</div>		
+		<div class='container_box box'>
+			<div class='row'>
+				<h3> Como usar? </h3>
+				<p> Adicione o arquivo .js do jQuery e o .js do slide </p>
+				<div class='code-placement'>
+					<code>
+						&lt;script type='text/javascript' src='js/jquery_core_1.11.3.js'&gt;</script> </br>
+						&lt;script type='text/javascript' src='js/drop_script.min.js'&gt;</script>
+					</code>
+				</div>
+				<p> Adicione tambem o .css (Aconselho a coloca-lo antes do .js)</p>
+				<div class='code-placement'>
+					<code>
+						&lt;link rel='stylesheet' href='css/style.css />
+					</code>
+				</div>
+				<p> Coloque as imagens dentro de uma &lt;div&gt; ! </p>
+				<div class='code-placement'>
+					<code>
+						&lt;div id='img_conteudo'&gt;</br>							
+							&ensp; &lt;img src='img/img1.jpg' /&gt;</br>							
+							&ensp; &lt;img src='img/img2.jpg' /&gt;</br>							
+							&ensp; &lt;img src='img/img3.jpg' /&gt;</br>							
+							&ensp; &lt;img src='img/img4.jpg' /&gt;</br>
+						&lt;/div&gt;
+					</code>
+				</div>
+				<p> Agora so adicionar o trigger! </p>
+				<div class='code-placement'>
+					<code>
+						$('#img_conteudo').dropSlide();
+					</code>
+				</div>
+			</div>
+		</div>
+		<div class='container_box box'>
+			<div class='row'>
+				<h3> Parametros aceitos </h3>
+				<p> DropSlider possui 2 parametros que são: Width e Height! </p>
+				<p> Estes são os parametros de controle de tamanho do slider. </p>
+				<p> Para usa-lo, apenas siga este padrão: </p>
+				<div class='code-placement'>
+					<code>
+						$('#img_conteudo2').dropSlide(400,200);</br>
+						//Width: 400 </br>
+						//Height: 200
+					</code>
+				</div>
+			</div>
+		</div>
+		<div class='container_box box'>
+			<div class='row'>
+				<h3> Contato </h3>
+				<p> Possui alguma dúvida sobre o slide ou tem alguma ideia para melhora-lo? </p>
+				<p> Mande um email - lucas_front@yahoo.com.br </p>
+			</div>
+		</div>		
+		<div class='container_box box footer'>
+			<div class='row'>
+				<ul>
+					<li><a href='https://github.com/magnorion' target='_blank'>magnorion</li>
+				</ul>
+			</div>
+		</div>
+		<!-- js -->
+		<script type='text/javascript' src='js/jquery_core_1.11.3.js'></script>
+		<script type='text/javascript' src='js/drop_script.min.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('#img_conteudo').dropSlide(800,400);
+			});
+		</script>
+	</body>
+</html>
