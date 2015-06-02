@@ -18,7 +18,7 @@ Adicione tambem o .css (Aconselho a coloca-lo antes do .js)
 <link rel='stylesheet' href='css/style.css /> 
 ```
 
-Coloque as imagens dentro de uma <div> ! 
+Coloque as imagens dentro de uma div ! 
 ```
 <div id='img_conteudo'>
   <img src='img/img1.jpg' />
