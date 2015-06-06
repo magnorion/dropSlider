@@ -15,7 +15,7 @@ Adicione o arquivo .js do jQuery e o .js do slide
 
 Adicione tambem o .css (Aconselho a coloca-lo antes do .js)
 ```
-<link rel='stylesheet' href='css/style.css /> 
+<link rel='stylesheet' href='css/drop_style.min.css /> 
 ```
 
 Coloque as imagens dentro de uma div ! 
