@@ -34,13 +34,14 @@ $('#img_conteudo').dropSlide();
 ```
 
 ###Parametros aceitos 
-DropSlider possui 2 parametros que sao: Width e Height!
-Estes sao os parametros de controle de tamanho do slider.
+DropSlider possui 3 parametros que são: Width, Height e Time!
+Estes são os parametros de controle de tamanho e tempo do slider .
 Para usa-lo, apenas siga este padrao: 
 ```
-$('#img_conteudo2').dropSlide(400,200);
+$('#img_conteudo').dropSlide(400,200,2500);
 //Width: 400
 //Height: 200 
+//Time: 2500
 ```
 
 ###Contato 
