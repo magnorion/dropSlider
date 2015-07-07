@@ -68,14 +68,15 @@
 		<div class='container_box box'>
 			<div class='row'>
 				<h3> Parametros aceitos </h3>
-				<p> DropSlider possui 2 parametros que são: Width e Height! </p>
-				<p> Estes são os parametros de controle de tamanho do slider. </p>
+				<p> DropSlider possui 3 parametros que são: Width, Height e Time! </p>
+				<p> Estes são os parametros de controle de tamanho e tempo do slider . </p>
 				<p> Para usa-lo, apenas siga este padrão: </p>
 				<div class='code-placement'>
 					<code>
-						$('#img_conteudo2').dropSlide(400,200);</br>
+						$('#img_conteudo2').dropSlide(400,200,2500);</br>
 						//Width: 400 </br>
-						//Height: 200
+						//Height: 200 </br>
+						//Time: 2500
 					</code>
 				</div>
 			</div>
@@ -99,7 +100,7 @@
 		<script type='text/javascript' src='js/drop_script.min.js'></script>
 		<script>
 			$(document).ready(function(){
-				$('#img_conteudo').dropSlide(800,400);
+				$('#img_conteudo').dropSlide(800,400,5000);
 			});
 		</script>
 	</body>

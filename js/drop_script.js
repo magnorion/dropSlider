@@ -6,7 +6,7 @@
 (function($){
 	'use strict';
 	$(document).ready(function(){
-		$.fn.dropSlide = function(width,height){
+		$.fn.dropSlide = function(width,height,time){
 			//The image container
 			var container = this;
 
@@ -14,12 +14,14 @@
 			var options = {
 				w:width,
 				h:height,
+				t:time
 			};
 
 			// Default options
 			var default_options = {
 				w:450,
 				h:200,
+				t:5000
 			};
 
 			if(typeof options.w == 'undefined'){
@@ -27,6 +29,9 @@
 			}
 			if(typeof options.h == 'undefined'){
 				options.h = default_options.h;
+			}			
+			if(typeof options.t == 'undefined'){
+				options.t = default_options.t;
 			}
 			
 			//set height and width to a element that contain all the images!
@@ -88,12 +93,29 @@
 			container.on({
 				mouseenter:function(){
 					$('#pagination').stop().animate({bottom:'0%'},600);
+					clearTimeout(timeOut);
 				},
 				mouseleave:function(){
 					$('#pagination').stop().animate({bottom:'-15%'},600);
+					timeOut = setTimeout(autoDrop,options.t);
 				}
 			});
 
+			// Auto animation!
+			var timeOut = null;
+			function autoDrop(){
+				if($('.drop-selected').next().is("li")){
+					$('.drop-selected').next().trigger('click');
+				}else{
+					$('.pag-child').first().trigger('click');
+				}
+				timeOut = setTimeout(autoDrop,options.t);
+			}
+			setTimeout(function(){
+				(function(){
+					autoDrop();
+				})();
+			},options.t);
 			return this;
 		}
 	});
